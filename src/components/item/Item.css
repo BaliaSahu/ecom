@@ -1,0 +1,57 @@
+.item{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 200px;
+      height: 300px;
+      justify-content: left;
+      align-items: left;
+}
+.item p{
+      font-size: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item .div img{
+      width: 130px;
+      height: 150px;
+}
+.item-prices{
+      font-size: small;
+}
+.item-prices{
+      display: flex;
+      gap: 10px;
+}
+.oldprice{
+      text-decoration: line-through;
+}
+.div{
+      display: flex;
+      justify-content: center;
+}
+@media(max-width:530px){
+      .item{
+            width: 40vw;
+      }
+      #idm{
+            width: 100px;
+            object-fit:contain;
+      }
+      .item p{
+            font-size: 10px;
+      }
+      .newprice{
+            font-size: 15px;
+      }
+      .oldprice{
+            font-size: 14px;
+      }
+}
+@media(max-width:1000px){
+      .item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+      }
+}

@@ -1,0 +1,147 @@
+.Navbar{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 16px;
+      box-shadow: 0 1px 3px -2px black;
+      position:sticky;
+      top: 0;
+      transition: 0.3s;
+      transition: all ease-in-out;
+      background-color: aliceblue;
+}
+.nav-menu ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+}
+.nav-menu ul li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      list-style-type: none;
+      text-decoration: none;
+}
+.nav-menu ul li a{
+      text-decoration: none;
+      list-style-type: none;
+      color: #000;
+}
+.nav-menu ul li a:active{
+      color: rgb(216, 27, 27);
+      transform: scale(1.15);
+      transition: 0.4s;
+}
+.nav-login-cart{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      cursor: pointer;
+}
+.nav-login-cart button{
+      width: 150px;
+      height: 40px;
+      outline: none;
+      cursor: pointer;
+      border: 1px solid gray;
+      font-size: medium;
+      font-weight: 500;
+      border-radius: 30px;
+}
+.nav-login-cart button:active{
+      background-color: rgb(221, 224, 226);
+}
+.nav-cart-count{
+      width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -40px;
+      margin-left: 18px;
+      background-color: rgb(222, 29, 29);
+      border-radius: 15px;
+      color: aliceblue;
+      font-size: 14px;
+}
+.nav-logo{
+      position: relative;
+      left: 0px;
+}
+.openee{
+      display: none;
+      cursor: pointer;
+}
+.closee{
+      display: none;
+      cursor: pointer;
+}
+#sections{
+      display: none;
+}
+@media(max-width:700px){
+      #navu{
+            position: fixed;
+            top:0;
+            left:0;
+            display: flex;
+            padding: 5px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 10px;
+            gap: 30px;
+            width: 130px;
+            height: 100%;
+            background: linear-gradient(180deg,rgb(184, 245, 239),white 100%);
+            transition: left 0.3s ease-in-out;
+      }
+      .nav-logo h2{
+            font-size: medium;
+      }
+      .closee{
+            display: block;
+            position: absolute;
+            right: 4px;
+            top:5px;
+            height:15px;
+      }
+      #openee{
+            display: block;
+            position: relative;
+            left: -50px;
+            top:3px;
+            height: 20px;
+
+      }
+      #login{
+            height: 30px;
+            width: 100px;
+            font-size: 14px;
+      }
+      #ord{
+            height: 20px;
+            position: relative;
+            top: -10px;
+      }
+      #count{
+            height: 14px;
+            width: 14px;
+      }
+      #sections{
+            display: block;
+      }
+}
+@media(max-width:700px){
+      .openee{
+            display: block;
+            position: relative;
+            left: -100px;
+      }
+      
+}

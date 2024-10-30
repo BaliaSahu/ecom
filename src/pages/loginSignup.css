@@ -1,0 +1,44 @@
+.loginsignup{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      background-color: rgb(226, 138, 229);
+}
+.container{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      gap: 20px;
+      padding: 50px;
+      border-radius: 10px;
+}
+.container input{
+      height: 40px;
+      text-align: left;
+      padding-left: 20px;
+      border-radius: 5px;
+      border: 1px solid black;
+}
+.two{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+}
+.continue{
+      background-color: red;
+      color: rgb(255, 255, 255);
+      height: 45px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+}
+.here{
+      color: red;
+}
+@media(max-width:550px){
+      .two p{
+            font-size: 15px;
+      }
+}

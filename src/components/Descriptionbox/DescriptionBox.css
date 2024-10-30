@@ -1,0 +1,35 @@
+.descriptionBox{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-left:40px;
+      margin-right: 40px;
+}
+.up{
+      border: 1px solid black;
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 20px;
+      border-radius: 5px;
+}
+.down{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      border: 1px solid black;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 20px;
+      border-radius: 5px;
+}
+@media(max-width:500px){
+      .descriptionBox{
+            margin-left: 20px;
+            margin-right: 20px;
+      }
+      .down p{
+            font-size: 13px;
+      }
+}

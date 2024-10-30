@@ -1,0 +1,36 @@
+.r{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      padding: 10px;
+}
+.r hr{
+      height: 8px;
+      width: 300px;
+      color: black;
+      background-color: black;
+      border-radius: 20px;
+}
+.cate{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+}
+@media(max-width:500px){
+      .r h2{
+            font-size: medium;
+      }
+      .r hr{
+            height: 3px;
+      }
+}
+@media(max-width:1000px){
+      .cate{
+            display: flex;
+            flex-wrap: wrap;
+      }
+}

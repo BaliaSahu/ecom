@@ -1,0 +1,34 @@
+.related{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.relProd{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+.relProd img{
+      width: 200px;
+      border-radius: 10px;
+}
+.relProd img:hover{
+      transform: scale(1.03);
+      transition: 0.2s;
+      transition: all ease-in-out;
+}
+.relProd p{
+      font-size: 15px;
+}
+@media(max-width:500px){
+      #rim{
+            width: 100px;
+            object-fit: cover;
+      }
+      #titl{
+            font-size: 10px;
+      }
+      .old , .new{
+            font-size: 15px;
+      }
+}

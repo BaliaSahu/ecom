@@ -1,0 +1,107 @@
+.collection{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+}
+.new-collection{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+}
+.new-collection hr{
+     height: 10px;
+     border-radius: 10px;
+     width: 260px;
+     background-color: rgb(96, 93, 88);
+     margin-bottom: 30px;
+}
+.itemes{
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      padding: 30px;
+}
+.itemes:hover{
+      transform: scale(1.03);
+      transition: 0.3s;
+      /* transition: all ease-in-out; */
+}
+.itemes .it1 img{
+      /* height: 320px; */
+      width: 330px;
+      object-fit: cover;
+      border-radius: 10px;
+}
+.prices{
+      display: flex;
+      gap: 20px;
+}
+.it2{
+      display: flex;
+      justify-content: left;
+      align-items: start;
+      flex-direction: column;
+}
+.it2 .old{
+      text-decoration: line-through;
+}
+.it2 h3{
+      font-size: small;
+}
+@media(max-width:1300px){
+      .collection{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+      }
+}
+@media(max-width:1000px){
+      .collection{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+      .im{
+            width: 100px;
+      }
+}
+@media(max-width:800px){
+      .collection{
+            margin-left: 20px;
+      }
+      .itemes{
+            padding: 10px;
+            width: 50%;
+            
+      }
+      .itemes .it1 .im{
+            width: 200px;
+      }
+      .it2{
+            margin-left: 10px;
+      }
+      .it2 h3{
+            font-size: 14px;
+      }
+}
+@media(max-width:530px){
+      .new-collection h1{
+            margin-top: 50px;
+            font-size: larger;
+      }
+      .new-collection hr{
+            height: 5px;
+      }
+      .collection{
+            margin-left: 100px;
+      }
+      .itemes .it1 .im{
+            width: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+      }
+}

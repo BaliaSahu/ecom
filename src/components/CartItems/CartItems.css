@@ -1,0 +1,101 @@
+.CartItems{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 100px 120px;
+}
+.cartItems-format-main{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 20px;
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+}
+.cartitems-format{
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+}
+.cartitems-format button{
+      width: 80px;
+      padding: 5px;
+      border-radius: 7px;
+}
+.cartitems-format img{
+      width: 100px;
+      border-radius: 10px;
+}
+.cartitems-format .remove{
+      background-color: red;
+      color: aliceblue;
+      border: none;
+      cursor: pointer;
+      height: 45px;
+}
+.cartitems-format .remove:hover{
+      transform: scale(1.05);
+}
+.cartItemsTotal{
+      display: flex;
+      justify-content: center;
+}
+.cartItems-down{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+}
+.six{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      margin: 20px;
+}
+.same{
+      display: flex;
+      justify-content: last baseline;
+      align-items: left;
+      gap: 180px;
+}
+.proceed{
+      padding: 13px;
+      border-radius: 15px;
+      background-color: rgb(237, 33, 33);
+      color: aliceblue;
+      border: none;
+      cursor: pointer;
+}
+@media(max-width:520px){
+      .proceed{
+            font-size: 14px;
+            width: 200px;
+      }
+      .cartItems-format-main p{
+            font-size: 15px;
+      }
+      #src{
+            width: 80px;
+      }
+      #iTitle{
+            font-size: 13px;
+      }
+      #inp{
+            font-size: 14px;
+            /* font-size: bold; */
+      }
+      #cbtn{
+            width: 50px;
+      }
+      #remo{
+            width: 80px;
+            font-size: 14px;
+      }
+      #ct{
+            font-size: 20px;
+      }
+}
